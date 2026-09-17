@@ -106,6 +106,63 @@ msgstr "É necessário reiniciar o sistema para que as permissões de grupo tenh
 msgid "Screen Brightness:"
 msgstr "Brilho do ecrã:"
 
+#: src/MainWindow.py
+msgid "Built-in Display"
+msgstr "Ecrã Integrado"
+
+#: src/MainWindow.py
+msgid "External Display"
+msgstr "Ecrã Externo"
+
+#: src/MainWindow.py
+msgid "Display"
+msgstr "Ecrã"
+
+#: src/MainWindow.py
+msgid "Primary"
+msgstr "Principal"
+
+#: ui/MainWindow.glade
+msgid "Power Mode"
+msgstr "Modo de Energia"
+
+#: ui/MainWindow.glade
+msgid "Choose system performance and power consumption mode"
+msgstr "Escolha o modo de desempenho do sistema e consumo de energia"
+
+#: ui/MainWindow.glade
+msgid "Maximizes battery life and limits system performance"
+msgstr "Maximiza a autonomia da bateria e limita o desempenho do sistema"
+
+#: ui/MainWindow.glade
+msgid "Standard performance and energy consumption balance (Recommended)"
+msgstr "Equilíbrio padrão de desempenho e consumo de energia (Recomendado)"
+
+#: ui/MainWindow.glade
+msgid "High computing power and maximum responsiveness"
+msgstr "Elevada potência de cálculo e máxima capacidade de resposta"
+
+#: ui/MainWindow.glade
+msgid "Screen Brightness"
+msgstr "Brilho do Ecrã"
+
+#: ui/MainWindow.glade
+msgid "Adjust brightness level of connected displays"
+msgstr "Ajuste o nível de brilho dos ecrãs ligados"
+
+#: src/MainWindow.py
+msgid "<b>Power Saver:</b> Maximizes battery life and limits system performance."
+msgstr "<b>Poupança de Energia:</b> Maximiza a autonomia da bateria e limita o desempenho do sistema."
+
+#: src/MainWindow.py
+msgid "<b>Balanced:</b> Standard performance and energy consumption balance (Recommended)."
+msgstr "<b>Equilibrado:</b> Equilíbrio ideal entre desempenho e consumo de energia (Recomendado)."
+
+#: src/MainWindow.py
+msgid "<b>Performance:</b> Delivers high computing power and maximum responsiveness."
+msgstr "<b>Desempenho:</b> Proporciona elevada potência de processamento e máxima capacidade de resposta."
+
 #: src/Notification.py:35
 msgid "Close"
 msgstr "Fechar"
+

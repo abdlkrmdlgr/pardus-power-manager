@@ -54,6 +54,7 @@ data_files = [
                    "src/__version__"]),
                  ("/usr/share/pardus/pardus-power-manager/data",
                   ["data/style.css",
+                   "data/power-lightning-symbolic.svg",
                    "data/tr.org.pardus.power-manager.desktop",
                    "data/tr.org.pardus.power-manager-autostart.desktop"]),
                  ("/usr/share/polkit-1/actions",
