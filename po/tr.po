@@ -21,7 +21,7 @@ msgstr ""
 
 #: ui/MainWindow.glade:63 src/MainWindow.py:219 src/MainWindow.py:306
 msgid "Power Saver"
-msgstr "Güç Tasarrufu"
+msgstr "Tasarruf"
 
 #: ui/MainWindow.glade:109 src/MainWindow.py:225 src/MainWindow.py:309
 msgid "Balanced"
@@ -107,6 +107,58 @@ msgstr ""
 #: src/MainWindow.py:466
 msgid "Screen Brightness:"
 msgstr "Ekran Parlaklığı:"
+
+#: src/MainWindow.py
+msgid "Built-in Display"
+msgstr "Dahili Ekran"
+
+#: src/MainWindow.py
+msgid "External Display"
+msgstr "Harici Ekran"
+
+#: src/MainWindow.py
+msgid "Display"
+msgstr "Ekran"
+
+#: src/MainWindow.py
+msgid "Primary"
+msgstr "Birincil"
+
+#: ui/MainWindow.glade
+msgid "Power Mode"
+msgstr "Güç Modu"
+
+#: ui/MainWindow.glade
+msgid "Maximizes battery life and limits system performance"
+msgstr "Pil ömrünü uzatmak için sistem performansını sınırlar"
+
+#: ui/MainWindow.glade
+msgid "Standard performance and energy consumption balance (Recommended)"
+msgstr "Standart performans ve enerji tüketimi dengesi sağlar (Önerilen)"
+
+#: ui/MainWindow.glade
+msgid "High computing power and maximum responsiveness"
+msgstr "Yüksek işlem gücü ve maksimum hız sağlar"
+
+#: ui/MainWindow.glade
+msgid "Screen Brightness"
+msgstr "Ekran Parlaklığı"
+
+#: ui/MainWindow.glade
+msgid "Adjust brightness level of connected displays"
+msgstr "Bağlı ekranların parlaklık düzeyini ayarlayın"
+
+#: src/MainWindow.py
+msgid "<b>Power Saver:</b> Maximizes battery life and limits system performance."
+msgstr "<b>Tasarruf:</b> Pil ömrünü uzatmak için donanım performansı ve enerji tüketimi sınırlandırılır."
+
+#: src/MainWindow.py
+msgid "<b>Balanced:</b> Standard performance and energy consumption balance (Recommended)."
+msgstr "<b>Dengeli:</b> Standart performans ve enerji tüketimi arasında ideal dengeyi sağlar."
+
+#: src/MainWindow.py
+msgid "<b>Performance:</b> Delivers high computing power and maximum responsiveness."
+msgstr "<b>Performans:</b> Yüksek işlem gücü ve maksimum hız sağlar. Enerji tüketimi artabilir."
 
 #: src/Notification.py:35
 msgid "Close"

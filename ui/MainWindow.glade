@@ -5,6 +5,8 @@
   <object class="GtkWindow" id="ui_main_window">
     <property name="can-focus">False</property>
     <property name="resizable">False</property>
+    <property name="default-width">530</property>
+    <property name="width-request">530</property>
     <property name="window-position">center</property>
     <property name="icon-name">pardus-power-manager</property>
     <signal name="delete-event" handler="on_ui_main_window_delete_event" swapped="no"/>
@@ -18,154 +20,125 @@
           <object class="GtkBox">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="margin-start">13</property>
-            <property name="margin-end">13</property>
-            <property name="margin-top">13</property>
-            <property name="margin-bottom">13</property>
+            <property name="margin-start">16</property>
+            <property name="margin-end">16</property>
+            <property name="margin-top">14</property>
+            <property name="margin-bottom">8</property>
             <property name="orientation">vertical</property>
-            <property name="spacing">21</property>
+            <property name="spacing">12</property>
             <child>
-              <object class="GtkBox" id="ui_powerbuttons_box">
+              <object class="GtkBox" id="ui_power_header_box">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="halign">center</property>
-                <property name="spacing">21</property>
-                <property name="homogeneous">True</property>
+                <property name="spacing">8</property>
                 <child>
-                  <object class="GtkButton" id="ui_powersaver_button">
+                  <object class="GtkImage" id="ui_power_title_image">
                     <property name="visible">True</property>
-                    <property name="can-focus">True</property>
-                    <property name="receives-default">True</property>
-                    <signal name="clicked" handler="on_ui_powersaver_button_clicked" swapped="no"/>
-                    <child>
-                      <object class="GtkBox">
-                        <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="margin-bottom">8</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkImage" id="ui_powersaver_image">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="pixel-size">64</property>
-                            <property name="icon-name">pardus-power-manager-power-saver</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">Power Saver</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                      </object>
-                    </child>
+                    <property name="can-focus">False</property>
+                    <property name="valign">center</property>
+                    <property name="icon-name">thunderbolt-symbolic</property>
+                    <property name="pixel-size">18</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
-                    <property name="fill">True</property>
+                    <property name="fill">False</property>
                     <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="ui_balanced_button">
+                  <object class="GtkLabel" id="ui_power_title_label">
                     <property name="visible">True</property>
-                    <property name="can-focus">True</property>
-                    <property name="receives-default">True</property>
-                    <signal name="clicked" handler="on_ui_balanced_button_clicked" swapped="no"/>
-                    <child>
-                      <object class="GtkBox">
-                        <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="margin-bottom">8</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkImage" id="ui_balanced_image">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="pixel-size">64</property>
-                            <property name="icon-name">pardus-power-manager-balanced</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">Balanced</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                      </object>
-                    </child>
+                    <property name="can-focus">False</property>
+                    <property name="valign">center</property>
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Power Mode</property>
+                    <style>
+                      <class name="section-title"/>
+                    </style>
                   </object>
                   <packing>
-                    <property name="expand">False</property>
+                    <property name="expand">True</property>
                     <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="ui_performance_button">
+                  <object class="GtkBox" id="ui_powerbuttons_box">
                     <property name="visible">True</property>
-                    <property name="can-focus">True</property>
-                    <property name="receives-default">True</property>
-                    <signal name="clicked" handler="on_ui_performance_button_clicked" swapped="no"/>
+                    <property name="can-focus">False</property>
+                    <property name="valign">center</property>
+                    <property name="halign">end</property>
+                    <property name="homogeneous">True</property>
+                    <style>
+                      <class name="linked"/>
+                    </style>
                     <child>
-                      <object class="GtkBox">
+                      <object class="GtkButton" id="ui_powersaver_button">
                         <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="margin-bottom">8</property>
-                        <property name="orientation">vertical</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <property name="tooltip-text" translatable="yes">Maximizes battery life and limits system performance</property>
+                        <signal name="clicked" handler="on_ui_powersaver_button_clicked" swapped="no"/>
                         <child>
-                          <object class="GtkImage" id="ui_performance_image">
+                          <object class="GtkLabel" id="ui_powersaver_label">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="pixel-size">64</property>
-                            <property name="icon-name">pardus-power-manager-performance</property>
+                            <property name="label" translatable="yes">Power Saver</property>
                           </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
                         </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="ui_balanced_button">
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <property name="tooltip-text" translatable="yes">Standard performance and energy consumption balance (Recommended)</property>
+                        <signal name="clicked" handler="on_ui_balanced_button_clicked" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
+                          <object class="GtkLabel" id="ui_balanced_label">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Balanced</property>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="ui_performance_button">
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <property name="tooltip-text" translatable="yes">High computing power and maximum responsiveness</property>
+                        <signal name="clicked" handler="on_ui_performance_button_clicked" swapped="no"/>
+                        <child>
+                          <object class="GtkLabel" id="ui_performance_label">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
                             <property name="label" translatable="yes">Performance</property>
                           </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
                         </child>
                       </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                      </packing>
                     </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
-                    <property name="fill">True</property>
+                    <property name="fill">False</property>
                     <property name="position">2</property>
                   </packing>
                 </child>
@@ -177,10 +150,134 @@
               </packing>
             </child>
             <child>
+              <object class="GtkBox" id="ui_profile_info_box">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="height-request">36</property>
+                <property name="margin-top">2</property>
+                <property name="margin-bottom">2</property>
+                <child>
+                  <object class="GtkLabel" id="ui_profile_info_label">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="halign">start</property>
+                    <property name="valign">center</property>
+                    <property name="xalign">0</property>
+                    <property name="yalign">0.5</property>
+                    <property name="margin-start">26</property>
+                    <property name="wrap">True</property>
+                    <property name="wrap-mode">word-char</property>
+                    <property name="width-chars">52</property>
+                    <property name="max-width-chars">52</property>
+                    <property name="lines">2</property>
+                    <property name="use-markup">True</property>
+                    <property name="label">Dengeli: Standart performans ve enerji tüketimi arasında ideal dengeyi sağlar.</property>
+                    <style>
+                      <class name="profile-desc-text"/>
+                    </style>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparator">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="margin-top">4</property>
+                <property name="margin-bottom">2</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox" id="ui_brightness_header_box">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="spacing">8</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="icon-name">display-brightness-symbolic</property>
+                    <property name="pixel-size">18</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">1</property>
+                    <child>
+                      <object class="GtkLabel" id="ui_brightness_title_label">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">start</property>
+                        <property name="label" translatable="yes">Screen Brightness</property>
+                        <style>
+                          <class name="section-title"/>
+                        </style>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="ui_brightness_subtitle_label">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">start</property>
+                        <property name="label" translatable="yes">Adjust brightness level of connected displays</property>
+                        <style>
+                          <class name="section-subtitle"/>
+                        </style>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkBox" id="ui_brightness_box">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="orientation">vertical</property>
+                <property name="spacing">6</property>
                 <child>
                   <placeholder/>
                 </child>
@@ -188,7 +285,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">2</property>
+                <property name="position">4</property>
               </packing>
             </child>
           </object>
