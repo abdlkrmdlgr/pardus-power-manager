@@ -38,6 +38,8 @@ gbp buildpackage --git-export-dir=/tmp/build/pardus-power-manager -us -uc
 
 ### **Screenshots**
 
-![Pardus Power Manager 1](screenshots/pardus-power-manager-1.png)
+![Pardus Power Manager - Dengeli](screenshots/pardus-power-manager-1.png)
 
-![Pardus Power Manager 2](screenshots/pardus-power-manager-2.png)
+![Pardus Power Manager - Performans](screenshots/pardus-power-manager-2.png)
+
+![Pardus Power Manager - Sistem Tepsisi](screenshots/pardus-power-manager-tray.png)
